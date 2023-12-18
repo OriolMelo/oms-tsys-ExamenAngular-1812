@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        @for(serie of series_list; track serie.id){
+            <div class="col-3">
+                <div class="card mr-5 mb-5">
+                    <img class="card-img-top" src="{{serie.poster_path}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">{{serie.name}}</h5>
+                        <a routerLink="/series/{{serie.id}}" class="btn btn-block btn-primary">See more</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

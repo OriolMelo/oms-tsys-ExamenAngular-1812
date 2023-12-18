@@ -1,0 +1,36 @@
+<div class="container d-flex flex-column align-items-center justify-content-center mt-5">
+    <div class="row text-center">
+            <div class="col">
+                <h1>{{ serie.name }} </h1>
+                
+                <div class="row justify-content-center mb-4">
+                    <div class="col-3">
+                    <img src="{{serie.poster_path}}" >
+                    </div>
+                </div>
+                <div class="row">
+                        <p><strong>Original name</strong></p>
+                </div>
+                <div class="row mb-4">
+                        <p>{{serie.original_name}}</p>
+                </div>
+                <div class="row">
+                    
+                    <p><strong>Overview</strong></p>
+                </div>
+                <div class="row mb-4">
+                    
+                    <p>{{serie.overview}}</p>
+                </div>
+                
+                <div class="row">
+                    
+                    <p><strong>Release date:</strong></p>
+                </div>
+                <div class="row mb-4">
+                    
+                    <p>{{serie.first_air_date}}</p>
+                </div>
+            </div>
+    </div>
+</div>
