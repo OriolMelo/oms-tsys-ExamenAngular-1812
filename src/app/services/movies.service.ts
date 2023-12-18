@@ -18,4 +18,8 @@ export class MoviesService {
   getMovie(id_Movie: number[]) {
     return this.http.get(this.url+id_Movie+"?api_key="+this.api_key);
   }
+
+  getMoviesByName(title: String){
+    return this.http.get(this.url+title+"?api_key="+this.api_key);
+  }
 }
